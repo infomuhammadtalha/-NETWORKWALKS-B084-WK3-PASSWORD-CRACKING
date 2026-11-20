@@ -53,13 +53,12 @@ In this lab, the task was to recover the password of a protected file, `My Locke
 ```text
 week3-pm1-password-cracking-jtr/
 ├── README.md
-└── screenshots/
-    ├── 01-johnny-settings-empty.png
-    ├── 02-browsing-downloaded-files.png
-    ├── 03-selecting-john-exe.png
-    ├── 04-extracting-hash-onlinehashcrack.png
-    ├── 05-opening-password-file-in-johnny.png
-    └── 06-password-cracked-result.png
+├── 01-johnny-settings-empty.png
+├── 02-browsing-downloaded-files.png
+├── 03-selecting-john-exe.png
+├── 04-extracting-hash-onlinehashcrack.png
+├── 05-opening-password-file-in-johnny.png
+└── 06-password-cracked-result.png
 ```
 
 ## Lab Workflow
@@ -92,27 +91,39 @@ Johnny returned the cracked password. Used it to open the original locked PDF an
 ## Screenshot Evidence
 
 ### 1. Johnny – Initial Setup
-![Johnny settings](screenshots/01-johnny-settings-empty.png)
+
+![Johnny settings](01-johnny-settings-empty.png)
+
 *Johnny opened for the first time, with no valid JTR executable path set.*
 
 ### 2. Locating the JTR Installation
-![Browsing files](screenshots/02-browsing-downloaded-files.png)
+
+![Browsing files](02-browsing-downloaded-files.png)
+
 *Browsing to the downloaded and extracted John the Ripper folder.*
 
 ### 3. Selecting john.exe
-![Selecting john.exe](screenshots/03-selecting-john-exe.png)
+
+![Selecting john.exe](03-selecting-john-exe.png)
+
 *Selecting `john.exe` from the `run` folder to set as Johnny's executable.*
 
 ### 4. Hash Extraction
-![Hash extraction](screenshots/04-extracting-hash-onlinehashcrack.png)
+
+![Hash extraction](04-extracting-hash-onlinehashcrack.png)
+
 *Using an online PDF hash extractor to generate the crackable `$pdf$...` hash from the locked PDF.*
 
 ### 5. Loading the Hash in Johnny
-![Opening password file](screenshots/05-opening-password-file-in-johnny.png)
+
+![Opening password file](05-opening-password-file-in-johnny.png)
+
 *Opening the saved hash file in Johnny to begin the attack.*
 
 ### 6. Password Cracked
-![Password cracked](screenshots/06-password-cracked-result.png)
+
+![Password cracked](06-password-cracked-result.png)
+
 *Johnny showing the recovered password after the attack completed.*
 
 ## Result
